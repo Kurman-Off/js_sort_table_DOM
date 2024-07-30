@@ -1,0 +1,2 @@
+var t=function(t){return parseFloat(t.replace(/[^0-9.-]+/g,""))||0},e=function(e,r){var n=document.querySelector("table").querySelector("tbody"),o=Array.from(n.querySelectorAll("tr"));o.sort(function(n,o){var c=n.children[e].textContent.trim(),l=o.children[e].textContent.trim();return r?t(c)-t(l):c.localeCompare(l)}),o.forEach(function(t){return n.appendChild(t)})};document.querySelectorAll("thead th").forEach(function(t,r){t.addEventListener("click",function(){e(r,"Salary"===t.textContent.trim()||"Age"===t.textContent.trim())})});
+//# sourceMappingURL=index.7bfbb00e.js.map
